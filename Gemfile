@@ -34,7 +34,7 @@ gem 'spring',        group: :development
 gem 'awesome_print'
 gem 'annotate'
 gem 'better_errors'
-gem 'meta_request'
+gem 'binding_of_caller'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
