@@ -38,10 +38,11 @@ GEM
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
     builder (3.2.2)
-    callsite (0.0.11)
     coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -50,6 +51,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.2.2)
     hike (1.2.3)
@@ -64,17 +66,11 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    meta_request (0.3.4)
-      callsite (~> 0.0, >= 0.0.11)
-      rack-contrib (~> 1.1)
-      railties (>= 3.0.0, < 5.0.0)
     mime-types (1.25.1)
     minitest (5.4.2)
     multi_json (1.10.1)
     polyglot (0.3.5)
     rack (1.5.2)
-    rack-contrib (1.1.0)
-      rack (>= 0.9.1)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.1.5)
@@ -140,11 +136,11 @@ DEPENDENCIES
   autoprefixer-rails
   awesome_print
   better_errors
+  binding_of_caller
   bootstrap-sass (~> 3.2.0)
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
-  meta_request
   rails (= 4.1.5)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
