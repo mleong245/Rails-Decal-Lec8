@@ -1,4 +1,19 @@
 class QuitsController < ApplicationController
+  def new
+    @user = User.find params[:user_id]
+    @quit = @user.quits.build
+  end
+
+  def create
+    @quit = Quit.new quit_params
+    if @quit.save
+      flash[:success] = 'Created!'
+      redirect_to @quit.user
+    else
+      render 'new'
+    end
+  end
+
   def edit
     @quit = Quit.find params[:id]
   end
@@ -16,6 +31,6 @@ class QuitsController < ApplicationController
   private
 
   def quit_params
-    params.require(:quit).permit(:text)
+    params.require(:quit).permit(:user_id, :text)
   end
 end
